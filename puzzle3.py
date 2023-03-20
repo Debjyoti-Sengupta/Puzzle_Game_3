@@ -56,8 +56,8 @@ for i in range(size):
 #Create List of possible placements of Cows(Actions)
 
 Actions=[]
-for i in range(size):
-    for j in range(size):
+for i in range(size-1,-1,-1):
+    for j in range(size-1,-1,-1):
         if GameBoard[i][j]=='.':
             Actions.append((i,j))
 max_depth=len(Actions)
